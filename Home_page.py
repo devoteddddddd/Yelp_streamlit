@@ -5,7 +5,7 @@ import pandas as pd
 
 
 df = pd.read_csv('make_up.csv')
-l = list(d['text2'])
+l = list(df['text2'])
 
 idx_to_str = {0:'Negative', 1:'Positive'}
 
