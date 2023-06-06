@@ -10,8 +10,15 @@ l = list(df['text2'])
 idx_to_str = {0:'Negative', 1:'Positive'}
 
 st.set_page_config(page_title="Emotion prediction")
+st.write("# Hi, Dear merchant👋")
+st.markdown(
+    """
+    Want to gain insights about the emotion trend of your customers? 
+    Just input a customer's comment into the box(in English format).
+    """
+)
 st.title('Emotion prediction')
-content = st.text_area('Please enter an English comment (only one comment can be predicted at a time)', key = 0)
+content = st.text_area("Please enter a customer's English comment (only one comment can be predicted at a time)", key = 0)
 
 
 
